@@ -39,6 +39,7 @@ header img {
     float: left;
     margin-right: 10px;
     width: 70px;
+    height: 70px;
 }
 
 header h1 {
@@ -110,6 +111,11 @@ tr td {
 
 tr td:first-child {
     background-color: #caf0f8;
+}
+
+.logo_1 {
+    width: 100px;
+    height: 70px;
 }
 
 
