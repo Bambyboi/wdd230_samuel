@@ -69,8 +69,8 @@ let listoftemples = [];
 // - Appends the <h3> element, the two <h4> elements, and the <img> element to the <article> element as children
 // - Appends the <article> element to the HTML element with an ID of temples
 
-const output = (temple) => {
-    temple.forEach(
+const output = (temples) => {
+    temples.forEach(
         temple => {
             let article = document.createElement('article');
 
@@ -92,7 +92,7 @@ const output = (temple) => {
             article.appendChild(dedicated);
             article.appendChild(img);
 
-            document.querySelector('#temple').appendChild(article);
+            document.querySelector('#temples').appendChild(article);
 
 
         }
@@ -105,22 +105,20 @@ const output = (temple) => {
 // Step 6: Finally, call the output function and pass it the list of temples. Execute your getTemples function to make sure it works correctly.
 
 
-fetch('https:/byui-cse.github.io/cse121b-course/week5/temples.json')
-    .then(response => response.jason())
-    .then(temple => {
-        listoftemples = temple;
-        output(listoftemples)
+fetch('https://byui-cse.github.io/cse121b-course/week05/temples.json')
+    .then(response => response.json())
+    .then(temples => {
+        listoftemples = temples;
+        output(listoftemples);
     });
-
 // Step 7: Declare a function named reset that clears all of the <article> elements from the HTML element with an ID of temples
 const reset = () => {
-    document.querySelector('#temple').innerHTML = '';
-}
-
-// Step 8: Declare a function named sortBy that does the following:
-// - Calls the reset function
-// - Sorts the global temple list by the currently selected value of the HTML element with an ID of sortBy
-// - Calls the output function passing in the sorted list of temples
+        document.querySelector('#temples').innerHTML = '';
+    }
+    // Step 8: Declare a function named sortBy that does the following:
+    // - Calls the reset function
+    // - Sorts the global temple list by the currently selected value of the HTML element with an ID of sortBy
+    // - Calls the output function passing in the sorted list of temples
 const sortBy = () => {
         reset();
         let filter = document.querySelector('#sortBy').value;
@@ -131,7 +129,7 @@ const sortBy = () => {
                     (temple1, temple2) => {
                         let templeName1 = temple1.templeName.toLowerCase();
                         let templeName2 = temple2.templeName.toLowerCase();
-                        if (templeName1 > templeName2) {
+                        if (templeName1 < templeName2) {
                             return -1;
                         } else if (templeName2 > templeName1) {
                             return -1;
@@ -148,7 +146,7 @@ const sortBy = () => {
                         let templeName2 = temple2.templeName.toLowerCase();
                         if (templeName1 > templeName2) {
                             return -1;
-                        } else if (templeName2 > templeName1) {
+                        } else if (templeName2 < templeName1) {
                             return -1;
                         } else {
                             return 0;

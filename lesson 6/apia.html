@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="WeatherNewa forecast for the Town of Apia" />
+    <meta name="author" content="Samuel Kaleopa" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <title>WeatherNews | The Town of Apia</title>
+</head>
+
+<body>
+    <!-- Banner -->
+    <aside id="banner">
+        Saturday = Apia Pancakes in the Park! 9:00 a.m. Saturday at the city park Motootua.
+    </aside>
+    <!-- Header -->
+    <header class="clearfix">
+        <img src="images/logo_1.webp" alt="logo" />
+        <div id="menuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <h1>WeatheNews</h1>
+        <h2>Weather forecast day ahead</h2>
+    </header>
+
+    <!-- Navigation -->
+    <nav id="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="apia.html">Apia</a></li>
+            <li><a href="soda-springs.html">Soda Springs</a></li>
+            <li><a href="fish-haven.html">Fish Haven</a></li>
+            <li><a href="storm-center.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <!-- Content -->
+    <main>
+        <h1>Apia Idaho</h1>
+        <section id="summary">
+            <!-- <img src="images/hero.jpg" alt="" /> -->
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/franklin_small.jpg" />
+                <source media="(max-width: 800px)" srcset="images/franklin_medium.jpg" />
+                <source media="(max-width: 1024px)" srcset="images/franklin_large.jpg" />
+                <img src="images/franklin_large.jpg" alt="Franklin" />
+            </picture>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Weather Summary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Currently:</td>
+                        <td>Sunny</td>
+                    </tr>
+                    <tr>
+                        <td>High:</td>
+                        <td><span id="temp">44</span>&deg;F</td>
+                    </tr>
+                    <tr>
+                        <td>Wind Chill:</td>
+                        <td><span id="windchill">N/A</span></td>
+                    </tr>
+                    <tr>
+                        <td>Humidity:</td>
+                        <td>82%</td>
+                    </tr>
+                    <tr>
+                        <td>Wind Speed:</td>
+                        <td><span id="windspeed">12</span>mph</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="forecast">
+            <h2>Five Day Forecast</h2>
+            <div class="forecast-box">
+                <div class="forecast-item">
+                    <h4>Monday</h4>
+                    <img src="images/cloudy.svg" alt="icon" />
+                    <p>Partly Cloudy</p>
+                </div>
+                <div class="forecast-item">
+                    <h4>Tuesday</h4>
+                    <img src="images/sun.svg" alt="icon" />
+                    <p>Sunny</p>
+                </div>
+                <div class="forecast-item">
+                    <h4>Wednesday</h4>
+                    <img src="images/sun.svg" alt="icon" />
+                    <p>Sunny</p>
+                </div>
+                <div class="forecast-item">
+                    <h4>Thursday</h4>
+                    <img src="images/cloudy.svg" alt="icon" />
+                    <p>Partly Cloudy</p>
+                </div>
+                <div class="forecast-item">
+                    <h4>Friday</h4>
+                    <img src="images/cloud.svg" alt="icon" />
+                    <p>Cloudy</p>
+                </div>
+            </div>
+        </section>
+        <section id="article" class="clearfix">
+            <h2>Today in History - Accession of Elizabeth II</h2>
+            <img src="https://picsum.photos/200" alt="" />
+            <p>
+                As a tropical Pacific Island close to the equator, Samoa's climate is warm and humid all year round, with little variation in temperature but with distinct wet and dry seasons. Samoa's average daytime air temperature throughout the year ranges from 24
+                to 30 degrees Celsius.
+            </p>
+            <p>
+                By knowing how cold, mild, warm, or hot it is in Samoa, you will find it easier to plan your days. Our 14 day weather forecast for Samoa becomes more accurate the closer to the date of your visit, so always be sure to check in frequently for any weather
+                updates.
+            </p>
+            <p><a href="#">Continue reading</a></p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <section id="contact">
+            <div>
+                <h2>Contact Information</h2>
+                <div>
+                    <div>
+                        <h3>Address</h3>
+                        <p>
+                            The WeatherNews Center <br /> 123 Motootua Street <br /> Vaitele, Jk 88585
+                        </p>
+                    </div>
+                    <div class="contacts">
+                        <h3>Phone:</h3>
+                        <p>
+                            <img src="images/phone-call.svg" alt="phone" /><a href="tel:+6857572675">+685 7572675</a
+                >
+              </p>
+              <h3>Email:</h3>
+              <p>
+                <img src="images/envelope.svg" alt="mail" /><a
+                  href="mailto:hello@weathertnews.com"
+                  >hello@weathertnews.com</a
+                >
+              </p>
+              <ul class="social">
+                <li>
+                  <a href="https://facebook.com"
+                    ><img src="images/facebook.svg" alt="facebook"
+                  /></a>
+                            </li>
+                            <li>
+                                <a href="https://facebook.com"><img src="images/linkedin.svg" alt="linkedin" /></a>
+                            </li>
+                            <li>
+                                <a href="https://facebook.com"><img src="images/twitter.svg" alt="twitter" /></a>
+                            </li>
+                            <li>
+                                <a href="https://facebook.com"><img src="images/instagram.svg" alt="instagram" /></a>
+                            </li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.google.ws/maps/@-13.8468646,-171.7795657,14z?hl=en"><img src="images/map.png" alt="" /></a>
+        </section>
+        <section id="copyright">
+            <p>
+                &copy; The WeatherNews Site <br />Images by
+                <a href="https://picsum.photos">Lorem Picsum</a>, Icons made by
+                <a href="https://www.flaticon.com/authors/iconixar" title="iconixar">iconixar</a
+          >
+          from
+          <a href="https://www.flaticon.com/" title="Flaticon"
+            >www.flaticon.com</a
+          >
+        </p>
+        <p>Samuel Kaleopa | <span id="currentDate">2022</span>&nbsp;</p>
+      </section>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/windchill.js"></script>
+  </body>
+</html>
