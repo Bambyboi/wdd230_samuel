@@ -18,6 +18,10 @@ h1 {
     font-size: 1.5rem;
 }
 
+body {
+    background-color: rgb(84, 117, 6);
+}
+
 main {
     margin: 0.5rem auto;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -63,6 +67,12 @@ li {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 0.5rem;
+}
+
+section {
+    background-color: blue;
+    margin: 2rem;
+    gap: 2em;
 }
 
 @media only screen and (min-width: 32.5em) {
