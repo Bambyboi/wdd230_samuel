@@ -14,6 +14,11 @@ html {
     box-sizing: border-box;
 }
 
+#logo1 img {
+    width: 70px;
+    height: 70px;
+}
+
 body {
     font-size: 16px;
     font-family: Inter, sans-serif;
@@ -313,10 +318,11 @@ footer ul.social {
     clear: both;
 }
 
-.clearfix img {
+
+/*.clearfix img {
     width: 70px;
     height: 70px;
-}
+}*/
 
 
 /* Toggle display of elements */
