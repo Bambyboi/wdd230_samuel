@@ -76,6 +76,16 @@ header {
     display: block;
 }
 
+.button:hover {
+    background-color: #00B4D8;
+    color: white;
+    --d: 75%;
+}
+
+.button {
+    background-color: #0077B6;
+}
+
 nav a:hover {
     background-color: #00B4D8;
     color: white;
