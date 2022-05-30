@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site Plan SAMOA Chamber of Commerce for Samuel Kaleopa in WDD 230: Web Frontend 
+    Development at Brigham Young University - Idaho">
+    <title>Samoa Chamber of Commerce | Site Plan Home</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="js/javascript.js" defer></script>
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <img class="logo" src="images/logo_1.png" alt="logo of Champer">
+            <section class="headings">
+                <h1>Samoa</h1>
+                <h2>Chamber of Commerce</h2>
+            </section>
+            <nav id="menu">
+                <ul class="navigation">
+                    <li><button onclick="toggleMenu()"> Menu</button></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Discover</a></li>
+                    <li><a href="">Directory</a></li>
+                    <li><a href="">Join</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social_active">
+                <section id="social">
+                    <a href="https://facebook.com"><img src="images/facebook.svg" alt="facebook" /></a>
+                    <a href="https://facebook.com"><img src="images/twitter.svg" alt="twitter" /></a>
+                    <a href="https://facebook.com"><img src="images/instagram.svg" alt="instagram" /></a>
+                </section>
+            </div>
+            <section class="date">
+                <h2><span id="headerdate">date</span></h2>
+            </section>
+        </header>
+        <main>
+            <div id="calltoaction" class="box">
+
+                <img class="callimg" src="images/samoa.jpg" alt="resposive image franklin">
+
+                <h3 class="welcome">Welcome to Samoa</h3>
+                <a href="">
+                    <h3 class="join">Join the Chamber</h3>
+                </a>
+            </div>
+            <div id="event" class="box">
+                <div class="headingbox">
+                    <h3>EARLY BIRD SSAB</h3>
+                </div>
+                <h4>Samoa by the island rock</h4>
+                <p>2 Early bird will get 60% off on anything</p>
+                <a href="">more info ...</a>
+            </div>
+            <div id="weather" class="box">
+                <div class="headingbox">
+                    <h3>WEATHER</h3>
+                </div>
+                <img class="weatherimg" src="images/partycloud.png" alt="">
+                <h2 id="temp">24°F</h2>
+                <h4 class="type">Partly Cloudy</h4>
+
+                <td>Wind Chill:</td>
+                <td><span id="windchill">N/A</span></td>
+
+                <td>Wind Speed:</td>
+                <td><span id="windspeed">12</span>mph</td>
+
+            </div>
+            <div id="join" class="notsmall">
+                <a href="">
+                    <h3 class="join2">Join Us!</h3>
+                </a>
+                <p class="jointext">Learn more about the Samoa chamber of commerce and how it could benefit you and your organization!</p>
+            </div>
+            <div id="newreleases" class="box">
+                <div class="headingbox">
+                    <h3>New Releases</h3>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <section class="spotlights">
+                <div id="spotlight1" class="box">
+                    <h3>Taumeasina Show</h3>
+                    <img class="spotlightimg" src="images/taumeasina.jpg" alt="taumeasina show every weekend">
+                    <div class="spotlightinfo">
+                        <h4>"Taumeasina Hotel shows"</h4>
+                        <div class="contactinfo">
+                            <p>taumeasina@gmail.com</p>
+                            <p>+999-999-9999 | Website</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="spotlight2" class="box">
+                    <h3>Tosua cave pool</h3>
+                    <img class="spotlightimg" src="images/tosua.jpg" alt="icon of tosua cave pool">
+                    <div class="spotlightinfo">
+                        <h4>Tosua cave pool only 18 above no children!!!</h4>
+                        <div class="contactinfo">
+                            <p>tosua@gmail.com</p>
+                            <p>+999-999-9999 | Website</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="spotlight3" class="onlylarge">
+                    <h3>Georgies Pizza 50% off</h3>
+                    <img class="spotlightimg" src="images/Pizza.png" alt="icon of pizza">
+                    <div class="spotlightinfo">
+                        <h4>Order Pizza for discount every Wednesday!!</h4>
+                        <div class="contactinfo">
+                            <p>contactinfo@gmail.com</p>
+                            <p>+999-999-9999 | Website</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <!-- <img src="images/hero.jpg" alt="" /> -->
+        <section id="summary">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/franklin_small.jpg" />
+                <source media="(max-width: 800px)" srcset="images/franklin_medium.jpg" />
+                <source media="(max-width: 1024px)" srcset="images/franklin_large.jpg" />
+                <img class="callimg" src="images/franklin_large.jpg" alt="resposive image franklin">
+            </picture>
+        </section>
+
+        <footer>
+            <div>
+                <img class="logo" src="images/logo_1.png" alt="logo of SAMOA">
+                <div id="info">
+                    <h4>Samoa Chamber of Commerce</h4>
+                    <p>685 APIA St. AP SAMOA, FT 45682</p>
+                    <p>info@samoa.com</p>
+                    <p>(685) 7575054 </p>
+                </div>
+            </div>
+            <p>&copy;<span id="year">year</span>Samoa Chamber | Samuel Kaleopa | WDD 230 Project</p>
+            <p>Last Updated: <span id="date">date</span></p>
+        </footer>
+    </div>
+</body>
+
+</html>
