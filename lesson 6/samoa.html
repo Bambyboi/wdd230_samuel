@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <script src="js/javascript.js" defer></script>
@@ -24,6 +24,9 @@
             <section class="headings">
                 <h1>Samoa</h1>
                 <h2>Chamber of Commerce</h2>
+                <section class="date">
+                    <h2><span id="headerdate">date</span></h2>
+                </section>
             </section>
             <nav id="menu">
                 <ul class="navigation">
@@ -42,14 +45,12 @@
                     <a href="https://facebook.com"><img src="images/instagram.svg" alt="instagram" /></a>
                 </section>
             </div>
-            <section class="date">
-                <h2><span id="headerdate">date</span></h2>
-            </section>
+
         </header>
         <main>
             <div id="calltoaction" class="box">
 
-                <img class="callimg" src="images/samoa.jpg" alt="resposive image franklin">
+                <img class="callimg" src="images/samoa.jpg" alt="photo of Samoa beach">
 
                 <h3 class="welcome">Welcome to Samoa</h3>
                 <a href="">
@@ -69,14 +70,18 @@
                     <h3>WEATHER</h3>
                 </div>
                 <img class="weatherimg" src="images/partycloud.png" alt="">
-                <h2 id="temp">24°F</h2>
+
                 <h4 class="type">Partly Cloudy</h4>
                 <div class="wind">
                     <td>Wind Chill:</td>
                     <td><span id="windchill">N/A</span></td>
 
+                    <td>High:</td>
+                    <td><span id="temp">44</span>&deg;F</td>
+
                     <td>Wind Speed:</td>
                     <td><span id="windspeed">12</span>mph</td>
+
                 </div>
 
             </div>
@@ -120,7 +125,7 @@
                 </div>
                 <div id="spotlight3" class="onlylarge">
                     <h3>Georgies Pizza 50% off</h3>
-                    <img class="spotlightimg" src="images/Pizza.png" alt="icon of pizza">
+                    <img class="spotlightimg" src="images/Pizza.png" alt="icon of Georgies pizza">
                     <div class="spotlightinfo">
                         <h4>Order Pizza for discount every Wednesday!!</h4>
                         <div class="contactinfo">
@@ -151,6 +156,9 @@
                     <p>info@samoa.com</p>
                     <p>(685) 7575054 </p>
                 </div>
+            </div>
+            <div id="map">
+                <a href="https://www.google.ws/maps/@-13.8599123,-171.7681549,13z?hl=en"><img src="images/map.png" alt="Map" /></a>
             </div>
             <p>&copy;<span id="year">year</span>Samoa Chamber | Samuel Kaleopa | WDD 230 Project</p>
             <p>Last Updated: <span id="date">date</span></p>
