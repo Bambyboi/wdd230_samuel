@@ -1,10 +1,34 @@
-// Get Current Date for Footer
-const currentDateSpan = document.querySelector("#currentDate");
+window.onload = get_year();
+window.onload = get_date();
+window.onload = get_day_month_year();
 
-const now = new Date();
-currentDateSpan.textContent = new Intl.DateTimeFormat("en-GB", {
-    dateStyle: "full",
-}).format(now);
+
+function get_date() {
+    var LastModif = new Date(document.lastModified);
+    console.log(LastModif);
+    document.getElementById("date").innerHTML = LastModif;
+}
+
+function get_year() {
+    var date = new Date().getFullYear();
+    console.log(date);
+    document.querySelector("#year").innerHTML = date;
+}
+
+function get_day_month_year() {
+    const datefield = document.querySelector(".date");
+    const datefieldUK = document.querySelector("aside");
+    const now = new Date();
+    const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
+        now
+    );
+    const fulldateUK = new Intl.DateTimeFormat("en-UK", {
+        dateStyle: "full"
+    }).format(now);
+    datefield.innerHTML = `<em>${fulldate}</em>`;
+    // broken
+    // datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
+}
 // Get all images to be replaced
 const imagesToLoad = document.querySelectorAll("[data-src]");
 
@@ -17,7 +41,7 @@ const loadImages = (img) => {
 };
 
 const imageOptions = {
-    threshold: 1,
+    threshold: 0,
     rootMargin: "0px 0px 50px 0px",
 };
 
