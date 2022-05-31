@@ -62,3 +62,7 @@ if ("IntersectionObserver" in window) {
         loadImages(img);
     });
 }
+
+function toggleMenu() {
+    document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+}

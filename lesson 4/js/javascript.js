@@ -16,7 +16,7 @@ function get_year() {
 }
 
 function toggleMenu() {
-    document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+    document.getElementsByClassName("nav_1")[0].classList.toggle("responsive");
 }
 
 function get_day_month_year() {
