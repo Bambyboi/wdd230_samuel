@@ -54,9 +54,10 @@ header {
     grid-row: 2/3;
     grid-column: 1/4;
     text-align: center;
+    font-family: Inter, Arial;
 }
 
-.navigation {
+.nav_1 {
     list-style: none;
     text-align: center;
     padding: 0;
@@ -65,11 +66,11 @@ header {
     grid-column: 2/4;
 }
 
-.navigation li:first-child {
+.nav_1 li:first-child {
     display: block;
 }
 
-.navigation li {
+.nav_1 li {
     display: none;
 }
 
@@ -181,10 +182,16 @@ h3 {
     background-color: #03045E;
     color: white;
     padding: 1px;
-    border-radius: 2em;
+    border-radius: 1em;
     top: 2%;
     left: 10%;
     right: 10%;
+}
+
+.welcome a:hover {
+    background-color: #18b1d3;
+    color: white;
+    --d: 75%;
 }
 
 .join {
@@ -240,16 +247,16 @@ h3 {
 }
 
 
-/* Spotlight Section  */
+/* Spots Section  */
 
-.spotlights {
+.spots {
     background-color: #90E0EF;
     display: grid;
     grid-template-rows: 1fr 1fr;
     margin: 10px;
 }
 
-#spotlight1 {
+#spot1 {
     position: relative;
     background-color: #CAF0F8;
     grid-row: 1/2;
@@ -257,20 +264,20 @@ h3 {
     padding: 0 10px;
 }
 
-#spotlight2 {
+#spot2 {
     position: relative;
     background-color: #CAF0F8;
     display: grid;
     padding: 0 10px;
 }
 
-#spotlight3 {
+#spot3 {
     position: relative;
     background-color: #CAF0F8;
     padding: 0 10px;
 }
 
-.spotlightimg {
+.spot_img {
     position: absolute;
     max-width: 40%;
     max-height: 40%;
@@ -278,7 +285,7 @@ h3 {
     top: 15%;
 }
 
-.spotlightinfo {
+.spot_info {
     margin-bottom: -70px;
 }
 

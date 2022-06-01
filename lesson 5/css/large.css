@@ -1,11 +1,11 @@
 @media screen and (min-width: 64em) {
-    .navigation {
+    .nav_1 {
         display: flex;
     }
-    .navigation li:first-child {
+    .nav_1 li:first-child {
         display: none;
     }
-    .navigation li {
+    .nav_1 li {
         display: block;
         flex: 1 1 100%;
     }
@@ -24,21 +24,21 @@
         grid-row: 3/4;
         grid-column: 2/4;
     }
-    .spotlights {
+    .spots {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         grid-column: 4/5;
         grid-row: 1/4;
     }
-    #spotlight1 {
+    #spot1 {
         grid-row: 1/2;
         grid-column: 1/2;
     }
-    #spotlight2 {
+    #spot2 {
         grid-row: 2/3;
         grid-column: 1/2;
     }
-    #spotlight3 {
+    #spot3 {
         grid-row: 3/4;
         grid-column: 1/2;
     }
@@ -53,6 +53,11 @@
     #weather {
         grid-row: 2/3;
         grid-column: 1/2;
+    }
+    .welcome a:hover {
+        background-color: #18b1d3;
+        color: white;
+        --d: 75%;
     }
     .callimg {
         width: 100%;
