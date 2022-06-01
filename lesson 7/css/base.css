@@ -355,20 +355,18 @@ footer {
 
 /*Gallery*/
 
+.container {
+    grid-template-columns: 1fr;
+}
+
 
 /*.container {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-}*/
-
-main div {
-    grid-template-columns: 1fr;
-    align-items: center;
 }
 
-
-/*.container {
+.container {
     margin: 1rem auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
