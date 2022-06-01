@@ -72,7 +72,7 @@
         font-size: 1.4rem;
         margin: 5px 0px;
     }
-    .container {
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr 1fr));
+    main div {
+        grid-template-columns: 1fr, 1fr;
     }
 }
