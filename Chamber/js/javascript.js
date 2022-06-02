@@ -20,7 +20,7 @@ function toggleMenu() {
 }
 
 function get_day_month_year() {
-    const datefield = document.querySelector(".date");
+    const datefield = document.querySelector("#date");
     const datefieldUK = document.querySelector("aside");
     const now = new Date();
     const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
