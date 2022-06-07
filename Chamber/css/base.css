@@ -115,7 +115,7 @@ nav ul li a {
 /* body and main */
 
 body {
-    margin: 0;
+    margin: 0 auto;
     font-size: 16px;
     font-family: Inter, sans-serif;
     background-color: #0077B6;
@@ -338,8 +338,8 @@ h3 {
 /* Footer */
 
 #map img {
-    width: 40%;
-    height: 40%;
+    width: 5%;
+    height: 5%;
 }
 
 footer {
@@ -412,3 +412,76 @@ img {
     filter: blur(0em);
     transition: filter 0.5s;
 }*/
+
+
+/*FORM*/
+
+form {
+    max-width: 100%;
+    margin: 1rem;
+    border: 1px solid #bbb;
+    padding: 0.5rem;
+    background-color: #00B4D8;
+    display: block;
+}
+
+label {
+    text-align: center;
+    font-weight: 700;
+}
+
+input[type="submit"] {
+    margin: 1rem 2.5rem;
+    color: #222;
+    font-weight: 700;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    gap: 10px;
+}
+
+input {
+    width: 100%;
+    gap: 10px;
+}
+
+label ul {
+    list-style-type: none;
+}
+
+#level1 {
+    text-align: center;
+    width: 96%;
+    height: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#level2 {
+    text-align: center;
+    width: 96%;
+    height: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#level3 {
+    text-align: center;
+    width: 96%;
+    height: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#level4 {
+    text-align: center;
+    width: 96%;
+    height: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#join_submit {
+    width: 50%;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site Plan SAMOA Chamber of Commerce for Samuel Kaleopa in WDD 230: Web Frontend 
+    Development at Brigham Young University - Idaho">
+    <title>Samoa Chamber of Commerce | Site Plan Home</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="js/discover.js" defer></script>
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <img class="logo" src="images/logo_1.png" alt="logo of Champer">
+            <section class="headings">
+                <h1>Samoa</h1>
+                <h2>Chamber of Commerce</h2>
+                <section class="date">
+                    <h2><span id="headerdate">date</span></h2>
+                </section>
+            </section>
+            <nav id="menu">
+                <ul class="nav_1">
+                    <li><button id="menuBtn" onclick="toggleMenu()"> Menu</button></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social_active">
+                <section id="social">
+                    <a href="https://facebook.com"><img src="images/facebook.svg" alt="facebook" /></a>
+                    <a href="https://facebook.com"><img src="images/twitter.svg" alt="twitter" /></a>
+                    <a href="https://facebook.com"><img src="images/instagram.svg" alt="instagram" /></a>
+                </section>
+            </div>
+
+        </header>
+        <!-- Content -->
+
+        <h1>Join us</h1>
+        <h2>
+            Please, fill the following form:
+        </h2>
+        <form method="get" action="thankyou.html">
+            <div class="form-box">
+                <label for="fname">First Name</label><br>
+                <input type="text" id="fname" name="fname" placeholder="Ex. Sammy" required><br>
+            </div>
+            <div class="form-box">
+                <label for="lname">Last Name</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Ex. Kaljess" required><br>
+            </div>
+            <div class="form-box">
+                <label for="position">Position (Optional)</label><br>
+                <input type="text" id="title" name="position" pattern="([a-zA-Z -]+{7, 25}]"><br>
+            </div>
+            <div class="form-box">
+                <label for="email">Email</label><br>
+                <input type="email" placeholder="Ex. sammykaljess@email.com" required><br>
+            </div>
+            <div class="form-box">
+                <label for="telephone">Phone Number</label><br>
+                <input type="tel" required><br>
+            </div>
+            <div class="form-box">
+                <label for="Business name">Business Name</label><br>
+                <input type="text" required><br><br>
+            </div>
+            <label for="business_description">Brief description of your business:</label><br>
+            <textarea id="textarea" name="business_description"></textarea><br><br>
+
+            <input type="checkbox" id="level1" name="NP" placeholder="membership">
+            <label for="vehicle1">
+                    NP Membership:
+                    <ul>
+                        <li><h4>Free</h4></li>
+                        <li>No Fees</li>
+                        <li>One Year of Exclusive News</li>
+                    </ul> 
+                </label><br><br>
+            <input type="checkbox" id="level2" name="bronze" value="membership">
+            <label for="vehicle2">
+                    Bronze Membership:
+                    <ul>
+                        <li><h4>$50/Year</h4></li>
+                        <li>One Year of Exclusive News</li>
+                        <li>One Year of Full Event Participation</li>
+                        <li>Our T-shirt of member</li>
+                        <li>Card to enter into our club</li>
+                    </ul> 
+                </label><br><br>
+            <input type="checkbox" id="level3" name="silver" value="membership">
+            <label for="vehicle2">
+                    Silver Membership:
+                    <ul>
+                        <li><h4>$69/Year</h4></li>
+                        <li>One Year of Exclusive News</li>
+                        <li>One Year of Full Event Participation</li>
+                        <li>Our T-shirt and water bottle of member</li>
+                        <li>Card to enter into our club</li>
+                        <li>$20 in bonnus to spend in our sponsoring stores</li>
+                    </ul> 
+                </label><br><br>
+            <input type="checkbox" id="level4" name="gold" value="membership">
+            <label for="vehicle3">
+                    Golden Membership:
+                    <ul class="form">
+                        <li><h4>$89/Year</h4></li>
+                        <li>One Year of Exclusive News</li>
+                        <li>One Year of Full Event Participation</li>
+                        <li>Our golden T-shirt and water bottle of member</li>
+                        <li>VIP Card to enter into our club</li>
+                        <li>$40 in bonnus to spend in our sponsoring stores</li>
+                        <li>Premium seat in all of our events(including snack)</li>
+                    </ul>
+                </label><br><br>
+            <div id="join_submit">
+                <input type="hidden" id="cur_date" name="current_date" value="much">
+                <input type="submit" value="Join">
+            </div>
+        </form>
+
+
+        <footer>
+            <div>
+                <img class="logo" src="images/logo_1.png" alt="logo of SAMOA">
+                <div id="info">
+                    <h4>Samoa Chamber of Commerce</h4>
+                    <p>685 APIA St. AP SAMOA, FT 45682</p>
+                    <p>info@samoa.com</p>
+                    <p>(685) 7575054 </p>
+                </div>
+            </div>
+            <div id="map">
+                <a href="https://www.google.ws/maps/@-13.8599123,-171.7681549,13z?hl=en" target="blank"><img src="images/map_icon-removebg-preview.png" alt="Map of Samoa" />Location Map<i class="fa fa-map-marker" style="font-size:40px;color:red"></i></a>
+            </div>
+            <p>&copy;<span id="year">year</span>Samoa Chamber | Samuel Kaleopa | WDD 230 Project</p>
+            <p>Last Updated: <span id="date">date</span></p>
+        </footer>
+    </div>
+</body>
+
+</html>

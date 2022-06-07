@@ -115,4 +115,48 @@
         grid-auto-rows: minmax(100px, auto);
         max-width: 1048px;
     }
+    /*FORMS*/
+    .form-box {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 2rem;
+    }
+    form input {
+        width: 100%;
+    }
+    #textarea {
+        width: 100%;
+        height: 100px;
+        gap: 10px;
+    }
+    #level1 {
+        text-align: center;
+        width: 96%;
+        height: 1.5rem;
+        margin-bottom: 10px;
+    }
+    #level2 {
+        text-align: center;
+        width: 96%;
+        height: 1.5rem;
+        margin-bottom: 10px;
+    }
+    #level3 {
+        text-align: center;
+        width: 96%;
+        height: 1.5rem;
+        margin-bottom: 10px;
+    }
+    #level4 {
+        text-align: center;
+        width: 96%;
+        height: 1.5rem;
+        margin-bottom: 10px;
+    }
+    #join_submit {
+        width: 50%;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+    }
 }
