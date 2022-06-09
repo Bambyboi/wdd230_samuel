@@ -159,4 +159,10 @@
         align-items: center;
         text-align: center;
     }
+    /*discover*/
+    figcaption {
+        text-align: center;
+        font-size: 16px;
+        font-family: Inter, sans-serif;
+    }
 }
