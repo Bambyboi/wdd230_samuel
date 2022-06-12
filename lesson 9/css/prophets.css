@@ -1,9 +1,13 @@
-img{
+header {
+    text-align: center;
+}
+
+img {
     border: 5px solid black;
 }
 
 section {
-    background-color: blanchedalmond;
+    background-color: rgb(206, 205, 255);
     border: 2px solid black;
     display: flex;
     flex-direction: column;
@@ -11,7 +15,7 @@ section {
     justify-content: center;
 }
 
-.cards{
+.cards {
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
