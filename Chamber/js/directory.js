@@ -1,4 +1,4 @@
-const file = "https://github.com/Bambyboi/wdd230_samuel/blob/main/Chamber/jason/data.json";
+const file = "https://bambyboi.github.io/wdd230_samuel/Chamber/jason/data.json";
 const cards = document.querySelector('.cards');
 
 
