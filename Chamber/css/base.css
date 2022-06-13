@@ -518,12 +518,14 @@ article,
     padding: 1rem;
     display: flex;
     font-size: 12px;
+    margin: auto;
 }
 
 .cards section {
     background-color: rgb(206, 205, 255);
     border: 2px solid black;
     display: flex;
+    padding: 1rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
