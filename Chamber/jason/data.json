@@ -1,0 +1,78 @@
+{
+    "directory": [{
+            "company": "Georgies Pizza",
+            "address": "Apia Upolu Samoa ",
+            "phone": "685 23781",
+            "website": "https://www.tripadvisor.com/Restaurant_Review-g312868-d5505239-Reviews-Georgies_Pizza-Apia_Upolu.html#MAPVIEW",
+            "imageurl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/05/79/42/the-best-pizzas-in-town.jpg?w=300&h=200&s=1"
+        },
+        {
+            "company": "Tosua Beach",
+            "address": "Lotofata Samoa",
+            "phone": "685 41699",
+            "website": "https://www.samoa.travel/plan-book/activities/to-sua-ocean-trench",
+            "imageurl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkmH1ZPN-sALxiWFgzcwr_PLCJSGVXwq2NMUNqCPJEf56KKdCH5D1NJcyDoC63w6p1FHA&usqp=CAU"
+        },
+        {
+            "company": "Taumeasina Hotel",
+            "address": "Vaiala Apia",
+            "phone": "(685) 648 8871",
+            "website": "https://www.tripadvisor.com/Hotel_Review-g312868-d9805330-Reviews-Taumeasina_Island_Resort-Apia_Upolu.html#/media/9805330/251779896:p/?albumid=101&type=0&category=101",
+            "imageurl": "https://www.tripadvisor.com/Hotel_Review-g312868-d9805330-Reviews-Taumeasina_Island_Resort-Apia_Upolu.html"
+
+        },
+        {
+            "company": "SABB",
+            "address": "",
+            "phone": "(786) 828-6918",
+            "website": "https://ssab.ws/products",
+            "imageurl": "https://ssab.ws/products"
+
+        },
+        {
+            "company": "SNPF",
+            "address": "Apia Samoa First floor",
+            "phone": "+1 (855) 520 6288",
+            "website": "https://www.npf.ws/",
+            "imageurl": "https://www.npf.ws/sites/all/themes/simplecorp-7.x-1.0/simplecorp/images/npfimages/slide6.jpg"
+        },
+        {
+            "company": "Samoa commercial bank",
+            "address": "SCB HQ Building, Tauese. P.O.Box L602, Apia, Samoa",
+            "phone": "(685) 31233",
+            "website": "http://www.scbl.ws/",
+            "imageurl": "http://www.scbl.ws/Images/SCBHQ.jpg"
+
+        },
+        {
+            "company": "Lalomanu Beach",
+            "address": "Lalomanu Upolu Samoa",
+            "phone": "(685) 712-7200",
+            "website": "https://www.tripadvisor.com/Attraction_Review-g312869-d1013078-Reviews-Lalomanu_Beach-Lalomanu_Upolu.html",
+            "imageurl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/aa/bf/a7/beach-fales.jpg?w=1200&h=-1&s=1"
+        },
+        {
+            "company": "Piula cave pool",
+            "address": "Lufilufi Samoa",
+            "phone": "(685) 785874",
+            "website": "https://en.wikipedia.org/wiki/Piula_Theological_College",
+            "imageurl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Piula_Cave_Pool%2C_Upolu_island%2C_Samoa.jpg/800px-Piula_Cave_Pool%2C_Upolu_island%2C_Samoa.jpg"
+
+        },
+        {
+            "company": "Hospital Tupua Tama Sese Efi",
+            "address": "Motootua Samoa",
+            "phone": "+685 21212",
+            "website": "https://daisi.com.au/tupua-tamasese-meaole-ttm-hospital/",
+            "imageurl": "https://daisi.com.au/wp-content/uploads/2017/11/IMG_1130.jpg"
+        },
+        {
+            "company": "Mc Donalds",
+            "address": "569J+CGP, Apia",
+            "phone": "21247",
+            "website": "https://www.facebook.com/McDonaldsAPIA/photos/",
+            "imageurl": "https://scontent.fapw2-1.fna.fbcdn.net/v/t39.30808-6/275518730_1198589287212793_8404038598790311347_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=2l6RHEKHep8AX9egMsb&_nc_oc=AQkeWk3ygd7xtT1FQPgpLADsXJDptV99nWASJxMFzmIaqazcQZwOZm_qhe7qZRrQ3Ng&_nc_ht=scontent.fapw2-1.fna&oh=00_AT_vQLeq8KNQL204G_nwPbbGv5KcixIHM6ermcg55KWX6g&oe=62AB7973"
+
+        }
+    ]
+}

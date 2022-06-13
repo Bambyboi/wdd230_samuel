@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site Plan SAMOA Chamber of Commerce for Samuel Kaleopa in WDD 230: Web Frontend 
+    Development at Brigham Young University - Idaho">
+    <title>Samoa Chamber of Commerce | Site Plan Home</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="js/discover.js" defer></script>
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <img class="logo" src="images/logo_1.png" alt="logo of Champer">
+            <section class="headings">
+                <h1>Samoa</h1>
+                <h2>Chamber of Commerce</h2>
+                <section class="date">
+                    <h2><span id="headerdate">date</span></h2>
+                </section>
+            </section>
+            <nav id="menu">
+                <ul class="nav_1">
+                    <li><button id="menuBtn" onclick="toggleMenu()"> Menu</button></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social_active">
+                <section id="social">
+                    <a href="https://facebook.com"><img src="images/facebook.svg" alt="facebook" /></a>
+                    <a href="https://facebook.com"><img src="images/twitter.svg" alt="twitter" /></a>
+                    <a href="https://facebook.com"><img src="images/instagram.svg" alt="instagram" /></a>
+                </section>
+            </div>
+
+        </header>
+        <!-- Content -->
+
+        <!--Display JSON-->
+        <h1>Latter-day Prophets</h1>
+        <div class="cards"></div>
+
+
+
+
+        <footer>
+            <div>
+                <img class="logo" src="images/logo_1.png" alt="logo of SAMOA">
+                <div id="info">
+                    <h4>Samoa Chamber of Commerce</h4>
+                    <p>685 APIA St. AP SAMOA, FT 45682</p>
+                    <p>info@samoa.com</p>
+                    <p>(685) 7575054 </p>
+                </div>
+            </div>
+            <div id="map">
+                <a href="https://www.google.ws/maps/@-13.8599123,-171.7681549,13z?hl=en" target="blank"><img src="images/map_icon-removebg-preview.png" alt="Map of Samoa" />Location Map<i class="fa fa-map-marker" style="font-size:40px;color:red"></i></a>
+            </div>
+            <p>&copy;<span id="year">year</span>Samoa Chamber | Samuel Kaleopa | WDD 230 Project</p>
+            <p>Last Updated: <span id="date">date</span></p>
+            <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+        </footer>
+    </div>
+</body>
+
+</html>
