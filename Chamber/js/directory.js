@@ -1,18 +1,18 @@
-const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
+const file = "https://github.com/Bambyboi/wdd230_samuel/blob/main/Chamber/jason/data.json";
 const cards = document.querySelector('.cards');
 
 
-fetch(requestURL)
+fetch(file)
     .then(function(response) {
         return response.json();
     })
     .then(function(jsonObject) {
-        const prophets = jsonObject['prophets'];
+        const directory = jsonObject['directory'];
         console.table(jsonObject); // temporary checking for valid response and data parsing
-        prophets.forEach(displayProphets);
+        directory.forEach(displayCompanies);
     });
 
-function displayProphets(prophet) {
+function displayCompanies(directory_1) {
     // Create elements to add to the document
     let card = document.createElement('section');
     let h2 = document.createElement('h2');
@@ -21,13 +21,14 @@ function displayProphets(prophet) {
     let portrait = document.createElement('img');
 
     // Change the textContent property of the h2 element to contain the prophet's full name
-    h2.textContent = `${prophet.name} ${prophet.lastname}`;
-    p.textContent = `Date of Birth: ${prophet.birthdate}`;
-    p2.textContent = `Place of Birth: ${prophet.birthplace}`;
+    h2.textContent = `${directory_1.company}`;
+    p.textContent = `Address: ${directory_1.address}`;
+    p2.textContent = `Phone: ${directory_1.phone}`;
+    p.textContent = `Website: ${directory_1.website}`;
 
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
-    portrait.setAttribute('src', prophet.imageurl);
-    portrait.setAttribute('alt', `Portait of ${prophet.name} ${prophet.lastname} - ${prophet.order}th Latter-day President`);
+    portrait.setAttribute('src', directory_1.imageurl);
+    portrait.setAttribute('alt', `Portait of ${directory_1.company} ${directory_1.address}`);
     portrait.setAttribute('loading', 'lazy');
     //`string text ${expression} string text`
     // Add/append the section(card) with the h2 element
