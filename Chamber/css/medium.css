@@ -89,4 +89,7 @@
         grid-auto-rows: minmax(100px, auto);
         max-width: 1048px;
     }
+    .cards a {
+        font-size: 12px;
+    }
 }
