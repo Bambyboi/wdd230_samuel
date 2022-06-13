@@ -489,23 +489,35 @@ label ul {
 
 /*directory*/
 
-.cards {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+.menu {
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: #00B4D8;
+    text-align: center;
+}
+
+.menu button {
+    padding: 1rem;
+    align-content: center;
+}
+
+.cards header {
+    text-align: center;
 }
 
 .cards img {
     border: 5px solid black;
-    width: 50%;
+    width: 60%;
     height: 50%;
 }
 
+article,
 .cards a {
     text-align: center;
     padding: 1rem;
+    display: flex;
+    font-size: 12px;
 }
 
 .cards section {
@@ -514,8 +526,8 @@ label ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     justify-content: center;
+    text-align: center;
     margin: 0;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -524,6 +536,14 @@ label ul {
 
 .cards section:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.cards {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
 .menu {
@@ -537,4 +557,32 @@ label ul {
 .menu button {
     padding: 1rem;
     align-content: center;
+}
+
+
+/*List button*/
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list section {
+    display: flex;
+    align-items: center;
+}
+
+.list section {
+    flex-direction: row;
+    justify-content: left;
+}
+
+.list section>* {
+    margin: 0 1rem;
+    text-align: left;
+}
+
+.list section img {
+    display: none;
+    /* smaller viewports only */
 }
