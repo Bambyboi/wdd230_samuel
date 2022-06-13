@@ -18,13 +18,14 @@ function displayCompanies(directory_1) {
     let h2 = document.createElement('h2');
     let p = document.createElement('p');
     let p2 = document.createElement('p');
+    let a = document.createElement('a');
     let portrait = document.createElement('img');
 
     // Change the textContent property of the h2 element to contain the prophet's full name
     h2.textContent = `${directory_1.company}`;
     p.textContent = `Address: ${directory_1.address}`;
     p2.textContent = `Phone: ${directory_1.phone}`;
-    p.textContent = `Website: ${directory_1.website}`;
+    a.textContent = `Website: ${directory_1.website}`;
 
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
     portrait.setAttribute('src', directory_1.imageurl);
@@ -36,6 +37,7 @@ function displayCompanies(directory_1) {
     card.appendChild(p);
     card.appendChild(p2);
     card.appendChild(portrait);
+    card.appendChild(a);
 
     // Add/append the existing HTML div with the cards class with the section(card)
     cards.appendChild(card);
