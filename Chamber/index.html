@@ -31,7 +31,7 @@
             </section>
             <nav id="menu">
                 <ul class="nav_1">
-                    <li><button onclick="toggleMenu()"> Menu</button></li>
+                    <li><button id="menuBtn" onclick="toggleMenu()"> Menu</button></li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="discover.html">Discover</a></li>
                     <li><a href="directory.html">Directory</a></li>
@@ -158,12 +158,15 @@
                     <p>(685) 7575054 </p>
                 </div>
             </div>
+        </footer>
+        <div class="footer_private">
             <div id="map">
                 <a href="https://www.google.ws/maps/@-13.8599123,-171.7681549,13z?hl=en" target="blank"><img src="images/map_icon-removebg-preview.png" alt="Map of Samoa" />Location Map<i class="fa fa-map-marker" style="font-size:40px;color:red"></i></a>
             </div>
             <p>&copy;<span id="year">year</span>Samoa Chamber | Samuel Kaleopa | WDD 230 Project</p>
             <p>Last Updated: <span id="date">date</span></p>
-        </footer>
+            <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+        </div>
     </div>
 </body>
 
