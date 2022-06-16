@@ -574,6 +574,12 @@ article {
     display: flex;
     font-size: 12px;
     margin: 0;
+    inline-size: 150px;
+    overflow-wrap: break-word;
+}
+
+.body_center {
+    width: 100%;
 }
 
 .cards section {
@@ -617,6 +623,18 @@ article {
 }
 
 
+/*-------------------------------------------------*/
+
+.cards section>* {
+    display: flex;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+/*--------------------------------------------------*/
+
+
 /*List button*/
 
 .list {
@@ -635,8 +653,8 @@ article {
 }
 
 .list section>* {
-    margin: 0 1rem;
     text-align: left;
+    padding: 0.5rem;
 }
 
 .list section img {
