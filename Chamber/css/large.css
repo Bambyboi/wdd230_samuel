@@ -61,9 +61,16 @@
         grid-row: 2/3;
         grid-column: 1/2;
     }
+    #spot2 a {
+        bottom: 10%;
+    }
     #spot3 {
         grid-row: 3/4;
         grid-column: 1/2;
+        display: grid;
+    }
+    .pizza img {
+        margin-top: 1rem;
     }
     #join {
         grid-row: 3/4;
@@ -76,6 +83,21 @@
     #weather {
         grid-row: 2/3;
         grid-column: 1/2;
+        padding: 2rem;
+    }
+    .weather_img {
+        display: flex;
+        margin: auto;
+        padding: 0;
+        width: 60px;
+        height: 60px;
+        bottom: 50%;
+    }
+    .type {
+        bottom: 2%;
+    }
+    .wind * {
+        margin: auto;
     }
     .welcome a:hover {
         background-color: #18b1d3;
