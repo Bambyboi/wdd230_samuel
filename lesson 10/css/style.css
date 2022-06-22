@@ -1,0 +1,31 @@
+header {
+    text-align: center;
+}
+
+img {
+    border: 5px solid black;
+}
+
+section {
+    background-color: rgb(206, 205, 255);
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    width: 100vw;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: 10%;
+}
+
+.cards {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
+}
