@@ -1,4 +1,4 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?q=samoa&appid=3d651779761435e479e104b935a3e586";
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?q=samoa&units=Imperial&appid=3d651779761435e479e104b935a3e586";
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {

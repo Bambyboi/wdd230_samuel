@@ -91,6 +91,10 @@
         padding: 1rem;
         margin: auto;
     }
+    .wind {
+        margin-bottom: 8%;
+        padding-top: 1rem;
+    }
     .temp {
         left: 25%;
         right: 25%;
@@ -101,7 +105,7 @@
     .type {
         left: 10%;
         right: 10%;
-        bottom: 8%;
+        bottom: 30%;
         font-size: 1.4rem;
         margin: 5px 0px;
     }
