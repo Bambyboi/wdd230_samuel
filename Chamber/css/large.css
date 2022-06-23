@@ -95,6 +95,7 @@
     }
     .type {
         bottom: 30%;
+        position: absolute;
     }
     .wind * {
         margin: auto;

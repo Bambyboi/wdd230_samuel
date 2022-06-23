@@ -258,6 +258,7 @@ h3 {
     position: relative;
     background-color: #CAF0F8;
     padding: 2rem;
+    padding-bottom: 0;
 }
 
 .weather_img {
@@ -278,6 +279,7 @@ h3 {
 
 .wind span {
     padding: 0%;
+    bottom: 8%;
 }
 
 #temp {
@@ -288,8 +290,7 @@ h3 {
 }
 
 .type {
-    position: absolute;
-    left: 45%;
+    left: 27%;
     bottom: 20%;
     font-size: 1.5rem;
 }
