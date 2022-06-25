@@ -595,7 +595,7 @@ article {
 }
 
 .cards section {
-    background-color: rgb(206, 205, 255);
+    background-color: #CAF0F8;
     border: 2px solid black;
     display: flex;
     padding: 1rem;
