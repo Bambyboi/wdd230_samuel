@@ -238,8 +238,9 @@
     }
     .cards img {
         border: 5px solid black;
-        width: 60%;
-        height: 50%;
+        width: 80%;
+        height: auto;
+        margin-top: 1rem;
     }
     article,
     .cards a {

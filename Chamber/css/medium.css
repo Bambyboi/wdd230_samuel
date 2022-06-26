@@ -142,4 +142,10 @@
     .cards a {
         font-size: 12px;
     }
+    .cards img {
+        border: 5px solid black;
+        width: 80%;
+        height: auto;
+        margin-top: 1rem;
+    }
 }
