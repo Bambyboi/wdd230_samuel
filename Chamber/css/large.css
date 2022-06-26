@@ -303,4 +303,11 @@
         display: none;
         /* smaller viewports only */
     }
+    /*Contact*/
+    .contact-box {
+        text-align: center;
+        border: 3px solid #00B4D8;
+        border-radius: 2rem;
+        background-color: #18b1d3;
+    }
 }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Inter:wght@700&display=swap');
 
 /* everything */
 
@@ -672,4 +672,14 @@ article {
 .list section img {
     display: none;
     /* smaller viewports only */
+}
+
+
+/*Contact*/
+
+.contact-box {
+    text-align: center;
+    border: 3px solid #00B4D8;
+    border-radius: 2rem;
+    background-color: #18b1d3;
 }
