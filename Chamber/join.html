@@ -82,51 +82,15 @@
             <label for="business_description">Brief description of your business:</label><br>
             <textarea id="textarea" name="business_description"></textarea><br><br>
 
-            <input type="checkbox" id="level1" name="NP" placeholder="membership">
-            <label for="vehicle1">
-                    NPMembership:
-                    <ul>
-                        <li><h4>Free</h4></li>
-                        <li>No Fees</li>
-                        <li>One Year of Exclusive on each beach</li>
-                    </ul> 
-                </label><br><br>
-            <input type="checkbox" id="level2" name="bronze" value="membership">
-            <label for="vehicle2">
-                    Bronze Membership:
-                    <ul>
-                        <li><h4>$5 per person</h4></li>
-                        <li>20% off on Georgies Pizza</li>
-                        <li>Update to all SSAB news</li>
-                        <li>Free to watch any Taumeasina shows</li>
-                        <li>Card to enter into our club</li>
-                    </ul> 
-                </label><br><br>
-            <input type="checkbox" id="level3" name="silver" value="membership">
-            <label for="vehicle2">
-                    Silver Membership:
-                    <ul>
-                        <li><h4>$10 per person in every beach</h4></li>
-                        <li>15%off on Georgies Pizza</li>
-                        <li>$50 per year to all SSAB news</li>
-                        <li>$5 per person to watch Taumeasina shows</li>
-                        <li>Get other tv channel for $12 per month</li>
-                        <li>$20 voucher on any Restaurant in Samoa</li>
-                    </ul> 
-                </label><br><br>
-            <input type="checkbox" id="level4" name="gold" value="membership">
-            <label for="vehicle3">
-                    Golden Membership:
-                    <ul class="form">
-                        <li><h4>$15 per person in every beach</h4></li>
-                        <li>10%off on Georgies Pizza</li>
-                        <li>$40 per year SSAB news</li>
-                        <li>15 per person to watch Taumeasina Shows</li>
-                        <li>VIP Card to enter into our club</li>
-                        <li>$40 in bonnus to spend in our sponsoring stores</li>
-                        <li>50 voucher on any Restaurant</li>
-                    </ul>
-                </label><br><br>
+
+            <fieldset>
+                <legend>Membership Options</legend>
+                <div>Tiers</div>
+                <label class="sbs"><input type="radio" name="membership" value="NP Membership"> Non-Profit</label>
+                <label class="sbs"><input type="radio" name="membership" value="Bronze Membership"> Bronze</label>
+                <label class="sbs"><input type="radio" name="membership" value="Silver Membership"> Silver</label>
+                <label class="sbs"><input type="radio" name="membership" value="Gold Membership"> Gold</label>
+            </fieldset>
             <div id="join_submit">
                 <input type="hidden" id="cur_date" name="current_date" value="much">
                 <input type="submit" value="Join">
