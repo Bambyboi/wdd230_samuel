@@ -1,43 +1,159 @@
-const requestURL = 'https://github.com/Alvarobyui/Final-Project-WDD230/blob/main/json/temple-info.json';
-const cards = document.getElementById('.directory');
+const file = "https://bambyboi.github.io/wdd230_samuel/Final%20project/json/temple-info.json";
+const cards = document.querySelector('.cards');
 
 
-fetch(requestURL)
+fetch(file)
     .then(function(response) {
         return response.json();
     })
     .then(function(jsonObject) {
-        //const companies = jsonObject['directory'];  
-        //console.log(JSON.parse(userJson));
-        console.table(JSON.parse(jsonObject)); // temporary checking for valid response and data parsing
-        //temple.forEach(displayTemple);
+        const temple = jsonObject['directory'];
+        console.table(jsonObject); // temporary checking for valid response and data parsing
+        temple.forEach(displayCompanies);
     });
 
-function displayTemple(temple) {
+function displayCompanies(temples) {
     // Create elements to add to the document
     let card = document.createElement('section');
-    let portrait = document.createElement('img');
+    let h2 = document.createElement('h2');
     let p = document.createElement('p');
     let p2 = document.createElement('p');
-    let link = document.createElement("a");
+    let a = document.createElement('a');
+    let portrait = document.createElement('img');
 
-    // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values.
-    portrait.setAttribute('src', temple.imageurl);
-    portrait.setAttribute('alt', `Logo of ${temple.name}`);
+    // Change the textContent property of the h2 element to contain the prophet's full name
+    h2.textContent = `${temples.name}`;
+    p.textContent = `Address: ${temples.address}`;
+    p2.textContent = `Phone: ${temples.phone}`;
+    a.textContent = `Website: ${temples.website}`;
+
+    // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
+    portrait.setAttribute('src', temples.img);
+    portrait.setAttribute('alt', `Portait of ${temples.name} ${temples.address}`);
     portrait.setAttribute('loading', 'lazy');
-
-    // Change the textContent property of the h2 element to contain the company name
-    p.textContent = `${temple.name}`;
-    p2.textContent = `${temple.phone}`;
-    link.textContent = `${temple.temple-closure}`;
-
+    a.setAttribute('href', temples.website);
     //`string text ${expression} string text`
     // Add/append the section(card) with the h2 element
-    card.appendChild(portrait);
+    card.appendChild(h2);
     card.appendChild(p);
     card.appendChild(p2);
-
+    card.appendChild(portrait);
+    card.appendChild(a);
 
     // Add/append the existing HTML div with the cards class with the section(card)
     cards.appendChild(card);
+}
+
+
+window.onload = get_year();
+window.onload = get_date();
+window.onload = get_day_month_year();
+
+
+function get_date() {
+    var LastModif = new Date(document.lastModified);
+    console.log(LastModif);
+    document.getElementById("date").innerHTML = LastModif;
+}
+
+function get_year() {
+    var date = new Date().getFullYear();
+    console.log(date);
+    document.querySelector("#year").innerHTML = date;
+}
+
+function get_day_month_year() {
+    const datefield = document.querySelector(".date");
+    const datefieldUK = document.querySelector("aside");
+    const now = new Date();
+    const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
+        now
+    );
+    const fulldateUK = new Intl.DateTimeFormat("en-UK", {
+        dateStyle: "full"
+    }).format(now);
+    datefield.innerHTML = `<em>${fulldate}</em>`;
+    // broken
+    // datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
+}
+// Get all images to be replaced
+const imagesToLoad = document.querySelectorAll("[data-src]");
+
+// function to load the actual image
+const loadImages = (img) => {
+    img.setAttribute("src", img.getAttribute("data-src"));
+    img.onload = () => {
+        img.removeAttribute("data-src");
+    };
+};
+
+const imageOptions = {
+    threshold: 0,
+    rootMargin: "0px 0px 50px 0px",
+};
+
+if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver((items, observer) => {
+        items.forEach((item) => {
+            if (item.isIntersecting) {
+                loadImages(item.target);
+                observer.unobserve(item.target);
+            }
+        });
+    }, imageOptions);
+    imagesToLoad.forEach((img) => {
+        observer.observe(img);
+    });
+} else {
+    imagesToLoad.forEach((img) => {
+        loadImages(img);
+    });
+}
+
+function toggleMenu() {
+    document.getElementsByClassName("nav_1")[0].classList.toggle("responsive");
+}
+
+// initialize display elements
+const todayDisplay = document.querySelector(".today");
+const visitsDisplay = document.querySelector(".visits");
+
+// get the stored value in localStorage
+let numVisits = Number(window.localStorage.getItem("visits-ls"));
+
+// determine if this is the first visit or display the number of visits.
+if (numVisits !== 0) {
+    visitsDisplay.textContent = numVisits;
+} else {
+    visitsDisplay.textContent = `This is your first visit!`;
+}
+
+// increment the number of visits.
+
+// how should this be improved?
+numVisits++;
+// store the new number of visits value
+localStorage.setItem("visits-ls", numVisits);
+
+
+
+/*--------------------------Removing and adding grid--------------------*/
+
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector(".cards");
+
+// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
+
+gridbutton.addEventListener("click", () => {
+    // example using arrow function
+    display.classList.add("grid");
+    display.classList.remove("list");
+});
+
+listbutton.addEventListener("click", showList); // example using defined function
+
+function showList() {
+    display.classList.add("list");
+    display.classList.remove("grid");
 }
