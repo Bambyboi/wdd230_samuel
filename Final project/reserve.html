@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hotel_Home_Page">
+    <link rel="shortcut icon" href="favicon-hotel.ico">
+    <title>Temple Inn & Suites - Home Page</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!-- Add icon library -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="top-grid">
+        <nav class="nav-links">
+            <a href="index.html"><img class="logo" src="img/Temple Inn Suites Logo - White with Black Background - 5000x5000.png" alt="Logo"></a>
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temples.html">Find Temples</a></li>
+                <li><a class="active" href="reserve.html">Reserve</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+            <label id="iconBtn">
+                <i class="material-icons">menu</i>
+            </label>
+        </nav>
+    </header>
+
+    <div class="reserve-page">
+        <div class="reserve-container">
+            <div class="title">Reserve</div>
+            <form action="index.html" method="get">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input type="text" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone</span>
+                        <input type="tel" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Home State/Country</span>
+                        <input type="text" placeholder="Where are you from?" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Arrival</span>
+                        <input type="date" placeholder="When will you visit us" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Nights</span>
+                        <input type="number" placeholder="Enter the number of nights" required>
+                    </div>
+                </div>
+                <div class="room-details">
+                    <input type="radio" name="option" id="dot-1">
+                    <input type="radio" name="option" id="dot-2">
+                    <input type="radio" name="option" id="dot-3">
+                    <span class="room-heading">Our offers</span>
+                    <div class="category">
+                        <label for="dot-1">
+                            <span class="dot one"></span>
+                            <span class="normal">Normal</span>
+                        </label>
+                        <label for="dot-2">
+                            <span class="dot two"></span>
+                            <span class="suite">Suite</span>
+                        </label>
+                        <label for="dot-3">
+                            <span class="dot three"></span>
+                            <span class="missionary">Missional</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Reserve">
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <footer class="footer-grid">
+        <img class="logo" src="img/Temple Inn Suites Logo - Original - 5000x5000.png" alt="Logo">
+        <div>
+            <div class="contacts">samuelkaleopa9@gmail.com<br> +685 7572675</div>
+            <div>Samoa Apia</div>
+            <div>4840 Montgomery Ln #320, Bethesda, MD 20814</div>
+        </div>
+        <a href="https://www.google.com/maps/place/Apia+Samoa+Temple/@-13.8380598,-171.7852515,17z/data=!3m1!4b1!4m5!3m4!1s0x71a51476dcb5440f:0xe113d6eed68ff462!8m2!3d-13.838065!4d-171.7830628" target="blank">Site Map<i class="fa fa-map-marker" style="font-size:20px;color:red; padding-left: 10px;"></i></a>
+        <div class="social-media-icons">
+            <div class="follow"><strong>Follow Us</strong> </div>
+            <ul class="link-icons">
+                <li>
+                    <a href="https://facebook.com"><img src="img/facebook.svg" alt="facebook" /></a>
+                </li>
+                <li>
+                    <a href="https://facebook.com"><img src="img/twitter.svg" alt="twitter" /></a>
+                </li>
+                <li>
+                    <a href="https://facebook.com"><img src="img/instagram.svg" alt="instagram" /></a>
+                </li>
+            </ul>
+        </div>
+        <div>&copy;<span id="onlyYear"></span> Temple Inn & Suites | Samuel M. Kaleopa | <span id="lastModified"></span></div>
+    </footer>
+    <script src="js/date.js"></script>
+    <script src="js/navBar.js"></script>
+</body>
+
+</html>

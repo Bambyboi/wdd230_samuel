@@ -1,0 +1,66 @@
+@media only screen and (min-width: 64em) {
+    /*Weather and forecast*/
+    .current-info {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .weather-container {
+        padding: 20px 150px;
+        height: 40vh;
+    }
+    .weather-container {
+        height: 40vh;
+    }
+    .future-forecast .today .temp {
+        font-size: 15px;
+        padding-top: 15px;
+    }
+    .future-forecast .weather-forecast .weather-forecast-item {
+        font-size: 13px;
+    }
+    .future-forecast .weather-forecast {
+        display: flex;
+        font-size: 15px;
+    }
+    /*Call to action banner*/
+    .call-button:hover {
+        color: #EB5E28;
+        box-shadow: 0 0 15px #EB5E28;
+        text-shadow: 0 0 15px #EB5E28;
+    }
+    /*Temple banner for homepage*/
+    /*Reservation form*/
+    .reserve-page {
+        display: block;
+    }
+    form .button input:hover {
+        background: linear-gradient(135deg, #CCC5B9, #EB5E28);
+    }
+    .temple-container {
+        grid-template-columns: 1fr;
+    }
+    .temple-card {
+        height: 45em;
+    }
+    .services-card {
+        height: 25em;
+    }
+    .services-container {
+        display: grid;
+        gap: 40px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        margin-bottom: 5rem;
+        margin-top: -10rem;
+    }
+    .link-icons li a img {
+        width: 50px;
+        height: 50px;
+    }
+    main {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}

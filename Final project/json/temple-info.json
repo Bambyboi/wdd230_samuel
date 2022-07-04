@@ -1,0 +1,51 @@
+{
+    "temples": [{
+            "name": "Apia Temple",
+            "address": "Vaitele Street, Pesega Apia, Samoa",
+            "phone": "(685) 64-230",
+            "temple-closure": "Monday, 18 July 2022 - Monday, 12 September 2022",
+            "img": "https://cdn.shortpixel.ai/spai/q_lossy+ret_img+to_webp/https://xdaysiny.com/wp-content/uploads/2015/10/Mormon-Church-Apia-Samoa-600x400.jpg"
+
+        },
+        {
+            "name": "Nukualofa Tonga temple",
+            "address": "Halaloto Road, Liahona Nuku'alofa Tonga",
+            "phone": "(676) 20-300",
+            "temple-closure": "Monday, 4 July 2022 - Monday, 18 July 2022",
+            "img": "https://upload.wikimedia.org/wikipedia/commons/9/92/Nuku_alofa_Tonga_Temple_2007-11-17.jpg"
+
+        },
+        {
+            "name": "LOT 2-20 Lakeba St Samabula, Suva Fiji",
+            "address": "Fiji Suva",
+            "phone": "(679) 338-8949",
+            "temple-closure": "Monday, 27 March 2023 - Monday, 10 April 2023",
+            "img": "https://assets.ldscdn.org/ef/fb/effbc29d37dd209a83ad515dd951d9f76c3584f3/suva_fiji_temple_exterior.jpeg"
+
+        },
+        {
+            "name": "Melbourne Australia Temple",
+            "address": "76 Cathies Ln Wantirna South VIC 3152 Australia",
+            "phone": "(61) 3-9881-9700",
+            "temple-closure": "Monday, 26 September 2022 - Monday, 10 October 2022",
+            "img": "https://newsroom.churchofjesuschrist.org/media/960x540/Melbourne-Australia-Temple.jpg"
+
+        },
+        {
+            "name": "Brisbane Australia Temple",
+            "address": "Carrera 46 via al mar pr 107",
+            "phone": "(57) 5-310-0200",
+            "temple-closure": "Monday, 17 April 2023 - Monday, 1 May 2023",
+            "img": "https://upload.wikimedia.org/wikipedia/commons/4/43/Brisbane_Australia_Temple_exterior.jpg"
+
+        },
+        {
+            "name": "Sydney Australia Temple",
+            "address": "756 Pennant Hills Road Corner Pennant Hills Rd & Moseley St.Carlingford NSW 2118, Australia",
+            "phone": "(61) 2-9841-5471",
+            "temple-closure": "Monday, 1 May 2023 - Monday, 15 May 2023",
+            "img": "https://churchofjesuschristtemples.org/assets/img/temples/sydney-australia-temple/sydney-australia-temple-16035-main.jpg"
+
+        }
+    ]
+}
