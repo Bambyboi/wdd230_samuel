@@ -7,7 +7,7 @@ fetch(file)
         return response.json();
     })
     .then(function(jsonObject) {
-        const temple = jsonObject['directory'];
+        const temple = jsonObject['temples'];
         console.table(jsonObject); // temporary checking for valid response and data parsing
         temple.forEach(displayCompanies);
     });
@@ -25,13 +25,11 @@ function displayCompanies(temples) {
     h2.textContent = `${temples.name}`;
     p.textContent = `Address: ${temples.address}`;
     p2.textContent = `Phone: ${temples.phone}`;
-    a.textContent = `Website: ${temples.website}`;
 
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
     portrait.setAttribute('src', temples.img);
     portrait.setAttribute('alt', `Portait of ${temples.name} ${temples.address}`);
     portrait.setAttribute('loading', 'lazy');
-    a.setAttribute('href', temples.website);
     //`string text ${expression} string text`
     // Add/append the section(card) with the h2 element
     card.appendChild(h2);

@@ -63,4 +63,63 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
+    /*find temple*/
+    .cards header {
+        text-align: center;
+    }
+    .cards img {
+        border: 5px solid black;
+        width: 80%;
+        height: auto;
+        margin-top: 1rem;
+    }
+    article,
+    .cards a {
+        text-align: center;
+        padding: 1rem;
+        display: flex;
+        font-size: 12px;
+    }
+    .cards section {
+        background-color: #CCC5B9;
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        cursor: pointer;
+        border-radius: 2rem;
+    }
+    .cards section p {
+        font-size: 15px;
+    }
+    .cards section:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+    .cards {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        border-radius: 1rem;
+    }
+    .menu {
+        margin: 1rem auto;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 0.5rem;
+        background-color: #24292b;
+        text-align: center;
+    }
+    .menu button {
+        padding: 1rem;
+        align-content: center;
+    }
+    .logo {
+        background-color: #EB5E28;
+    }
 }
