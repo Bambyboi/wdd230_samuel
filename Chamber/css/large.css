@@ -149,6 +149,15 @@
         top: 5%;
         right: 10%;
     }
+    .two-grid {
+        margin: 1rem auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: minmax(100px, auto);
+        max-width: 1048px;
+        background-color: #18b1d3;
+        gap: 10px;
+    }
     /*FORMS*/
     .form-box {
         display: flex;

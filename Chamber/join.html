@@ -54,50 +54,84 @@
         <h2>
             Please, fill the following form:
         </h2>
-        <form method="get" action="thankyou.html">
-            <div class="form-box">
-                <label for="fname">First Name</label><br>
-                <input type="text" id="fname" name="fname" placeholder="Ex. Sammy" required><br>
-            </div>
-            <div class="form-box">
-                <label for="lname">Last Name</label><br>
-                <input type="text" id="lname" name="lname" placeholder="Ex. Kaljess" required><br>
-            </div>
-            <div class="form-box">
-                <label for="position">Position (Optional)</label><br>
-                <input type="text" id="title" name="position" pattern="([a-zA-Z -]+{7, 25}]"><br>
-            </div>
-            <div class="form-box">
-                <label for="email">Email</label><br>
-                <input type="email" placeholder="Ex. sammykaljess@email.com" required><br>
-            </div>
-            <div class="form-box">
-                <label for="telephone">Phone Number</label><br>
-                <input type="tel" required><br>
-            </div>
-            <div class="form-box">
-                <label for="Business name">Business Name</label><br>
-                <input type="text" required><br><br>
-            </div>
-            <label for="business_description">Brief description of your business:</label><br>
-            <textarea id="textarea" name="business_description"></textarea><br><br>
+        <div class="two-grid">
+            <form method="get" action="thankyou.html">
+                <div class="form-box">
+                    <label for="fname">First Name</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="Ex. Sammy" required><br>
+                </div>
+                <div class="form-box">
+                    <label for="lname">Last Name</label><br>
+                    <input type="text" id="lname" name="lname" placeholder="Ex. Kaljess" required><br>
+                </div>
+                <div class="form-box">
+                    <label for="position">Position (Optional)</label><br>
+                    <input type="text" id="title" name="position" pattern="([a-zA-Z -]+{7, 25}]"><br>
+                </div>
+                <div class="form-box">
+                    <label for="email">Email</label><br>
+                    <input type="email" placeholder="Ex. sammykaljess@email.com" required><br>
+                </div>
+                <div class="form-box">
+                    <label for="telephone">Phone Number</label><br>
+                    <input type="tel" required><br>
+                </div>
+                <div class="form-box">
+                    <label for="Business name">Business Name</label><br>
+                    <input type="text" required><br><br>
+                </div>
+                <label for="business_description">Brief description of your business:</label><br>
+                <textarea id="textarea" name="business_description"></textarea><br><br>
 
 
-            <fieldset>
-                <legend>Membership Options</legend>
-                <div>Tiers</div>
-                <label class="sbs"><input type="radio" name="membership" value="NP Membership"> Non-Profit</label>
-                <label class="sbs"><input type="radio" name="membership" value="Bronze Membership"> Bronze</label>
-                <label class="sbs"><input type="radio" name="membership" value="Silver Membership"> Silver</label>
-                <label class="sbs"><input type="radio" name="membership" value="Gold Membership"> Gold</label>
-            </fieldset>
-            <div id="join_submit">
-                <input type="hidden" id="cur_date" name="current_date" value="much">
-                <input type="submit" value="Join">
+                <fieldset>
+                    <legend>Membership Options</legend>
+                    <div>Tiers</div>
+                    <label class="sbs"><input type="radio" name="membership" value="NP Membership"> Non-Profit</label>
+                    <label class="sbs"><input type="radio" name="membership" value="Bronze Membership"> Bronze</label>
+                    <label class="sbs"><input type="radio" name="membership" value="Silver Membership"> Silver</label>
+                    <label class="sbs"><input type="radio" name="membership" value="Gold Membership"> Gold</label>
+                </fieldset>
+                <div id="join_submit">
+                    <input type="hidden" id="cur_date" name="current_date" value="much">
+                    <input type="submit" value="Join">
+                </div>
+            </form>
+            <div class="membership_container">
+                <h2 class="member">Membership Details</h2>
+                <div class="npmember">
+                    <h2>NP Membership</h2>
+                    <ul>
+                        <li>This is a non profit membership</li>
+                        <li>You can access this for free anytime.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Bonze Membership</h2>
+                    <ul>
+                        <li>With the bronze membership you get the feel of nice things.</li>
+                        <li>you have 5% discount in all products.</li>
+                        <li>Only $10.00 per month.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Silver Membership</h2>
+                    <ul>
+                        <li>Get to know what it feel like to have a 10% discount in all products</li>
+                        <li>Get one on one mentoring</li>
+                        <li>Only $50.00 per month.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Gold Membership</h2>
+                    <ul>
+                        <li>Qualify for all kinds of discounts in this package</li>
+                        <li>Support with a complete team to solve problems and archive goals.</li>
+                        <li>Only $100.00 per month.</li>
+                    </ul>
+                </div>
             </div>
-        </form>
-
-
+        </div>
         <footer>
             <div>
                 <img class="logo" src="images/logo_1.png" alt="logo of SAMOA">
