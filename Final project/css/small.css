@@ -530,7 +530,6 @@ footer a:visited {
 .reserve-container .title {
     font-size: 25px;
     font-weight: 500;
-    position: relative;
 }
 
 .reserve-container .title::before {
@@ -726,6 +725,11 @@ form .button input {
 .top-section h3 {
     font-size: 1.8rem;
     color: black;
+}
+
+.amenities li {
+    background-color: #913291;
+    width: 40%;
 }
 
 .top-section p {
