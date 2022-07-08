@@ -18,15 +18,13 @@ function displayCompanies(temples) {
     let h2 = document.createElement('h2');
     let p = document.createElement('p');
     let p2 = document.createElement('p');
-    let p3 = document.createElement('p');
     let a = document.createElement('a');
     let portrait = document.createElement('img');
 
-    // Change the textContent property of the h2 element to contain the prophet's full name
+    // Change the textContent property of the h2 element to contain the temples name
     h2.textContent = `${temples.name}`;
     p.textContent = `Address: ${temples.address}`;
     p2.textContent = `Phone: ${temples.phone}`;
-    p3.textContent = `Closure schedule: ${temples.temple-closure}`;
 
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
     portrait.setAttribute('src', temples.img);
